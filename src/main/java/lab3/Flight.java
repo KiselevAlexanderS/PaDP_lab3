@@ -1,9 +1,17 @@
 package lab3;
 
-public class Flight {
+import java.io.Serializable;
+
+public class Flight implements Serializable {
     private String Depature;
     private String Arrival;
     private int Delay;
     private boolean Canceled;
-    
+
+    Flight(String Depature, String Arrival, boolean Canceled, int Delay) {
+        this.Depature = Depature;
+        this.Depature = Depature;
+        this.Depature = Depature;
+        this.Depature = Depature;
+    }
 }
