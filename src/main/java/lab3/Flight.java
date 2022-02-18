@@ -5,7 +5,7 @@ import scala.Serializable;
 public class Flight implements Serializable {
     private String Depature;
     private String Arrival;
-    private int Delay;
+    private Float Delay;
     private boolean Canceled;
 
     Flight(String Depature, String Arrival, boolean Canceled, int Delay) {
