@@ -42,7 +42,7 @@ public class Main {
         JavaSparkContext context = new JavaSparkContext(conf);
 
         flights = context.textFile(args[0]);
-        airports = context.textFile(args[1];
+        airports = context.textFile(args[1]);
         String finalFlights = flights.first();
         String finalAirports = airports.first();
         flights = flights.filter(a -> !a.equals(finalFlights));
