@@ -80,7 +80,7 @@ public class Main {
                     String departure = airBrodcast.value().get(fl._1._1);
                     String result = "Departure " + departure + " destination " + destination + " flight info " + fl._2;
                     return result;
-        }).saveAsTextFile("output");
+        }).saveAsTextFile(args[2]);
     }
 
 }
