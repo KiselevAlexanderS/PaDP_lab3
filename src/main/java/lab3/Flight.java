@@ -30,4 +30,9 @@ public class Flight implements Serializable {
     public int getDelay() {
         return Delay;
     }
+
+    @Override
+    public String toString() {
+        String str = ""
+    }
 }
