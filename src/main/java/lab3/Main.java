@@ -55,8 +55,8 @@ public class Main {
                 flights -> {
                     Iterator<Flight> iterator = flights.iterator();
                     int canceledAmount = 0;
-                    int canceledAmount = 0;
-                    int canceledAmount = 0;
+                    int DelayAmount = 0;
+                    int count = 0;
                 });
     }
 
