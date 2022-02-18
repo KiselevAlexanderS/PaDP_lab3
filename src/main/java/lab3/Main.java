@@ -16,7 +16,8 @@ public class Main {
         airports = context.textFile(args[1]);
         String finalFlights = flights.first();
         String finalAirports = airports.first();
-
+        flights = flights.filter(a -> !a.equals(finalFlights));
+        airports = airports.filter(a -> !a.equals(finalAirports));
     }
 
 }
