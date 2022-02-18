@@ -39,7 +39,7 @@ public class Main {
                 System.out.println(cols[19]);
                 String destination = cols[14];
                 float timeOfDelay = cols[18].isEmpty() ? 0 : Float.parseFloat(cols[18]);
-                return new Tuple2<>(new Tuple2<>(departure,destination),new Flight(departure,destination,cancelled,timeOfDelay));
+                return new Tuple2<>(new Tuple2<>(departure,destination),new Flight(departure,destination,cancelled, timeOfDelay));
             });
     }
 
