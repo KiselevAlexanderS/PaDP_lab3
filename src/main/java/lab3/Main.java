@@ -8,10 +8,12 @@ public class Main {
     public static void main(String[] args) {
         SparkConf conf = new SparkConf().setAppName("lab3");
         JavaSparkContext context = new JavaSparkContext(conf);
+        
         JavaRDD<String> flights = context.textFile(args[0]);
         JavaRDD<String> airports = context.textFile(args[1]);
         JavaRDD<String> finalFlights = flights;
         JavaRDD<String> finalAirports = airports;
+
     }
 
 }
