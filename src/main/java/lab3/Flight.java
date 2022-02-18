@@ -27,7 +27,7 @@ public class Flight implements Serializable {
         return Depature;
     }
 
-    public int getDelay() {
+    public Float getDelay() {
         return Delay;
     }
 
