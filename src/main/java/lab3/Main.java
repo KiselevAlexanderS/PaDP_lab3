@@ -14,8 +14,8 @@ public class Main {
 
         flights = context.textFile(args[0]);
         airports = context.textFile(args[1]);
-        JavaRDD<String> finalFlights = flights;
-        JavaRDD<String> finalAirports = airports;
+        String finalFlights = flights;
+        String finalAirports = airports;
 
     }
 
