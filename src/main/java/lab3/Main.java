@@ -75,7 +75,12 @@ public class Main {
                     }
                     String res = "Delays = " + DelayAmount/count + " Cancelled = " + canceledAmount/count + " maxDelay = " + maxDelay + "\n";
                     return res;
-                });
+                }).map(fl -> {
+                    String destination = airBrodcast.value().get(fl._1._2);
+                    String departure = airBrodcast.value().get(fl._1._1);
+                    String result = "Departure " + departure + " destination " + destination + " flight info " + fl._2;
+                    return result;
+        }).saveAsTextFile("output");
     }
 
 }
