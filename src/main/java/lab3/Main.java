@@ -30,6 +30,17 @@ public class Main {
                 String description = cols[1].replace("\"","");
                 return new Tuple2<>(code, description);
             });
+
+        flight = flights.mapToPair(
+            line -> {
+                String[] cols = line.split(",");
+                boolean cancelled = Float.parseFloat(cols[19]) != 0;
+                String departure = cols[11];
+                System.out.println(cols[19]);
+                String destination = cols[14];
+                float timeOfDelay = cols[18].isEmpty() ? 0 : Float.parseFloat(cols[18]);
+                return new Tuple2<>(new Tuple2<>(departure,destination),new Flight(departure,destination,cancelled,timeOfDelay));
+            });
     }
 
 }
