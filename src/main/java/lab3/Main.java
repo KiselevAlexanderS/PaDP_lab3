@@ -22,7 +22,8 @@ public class Main {
 
         JavaPairRDD<String,String> airport = airports.mapToPair(
                 line -> {
-                    String[] cols = line.split()
+                    String[] cols = line.split(",");
+                    String code = cols[0].replace("\"","");
                 });
     }
 
