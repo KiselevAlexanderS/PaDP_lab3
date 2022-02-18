@@ -14,4 +14,18 @@ public class Flight implements Serializable {
         this.Canceled = Canceled;
         this.Delay = Delay;
     }
+
+    public boolean isCanceled() {
+        return Canceled;
+    }
+
+    public String getArrival() {
+        return Arrival;
+    }
+
+    public String getDepature() {
+        return Depature;
+    }
+
+    public get
 }
