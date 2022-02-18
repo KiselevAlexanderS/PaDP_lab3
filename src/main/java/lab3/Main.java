@@ -73,7 +73,8 @@ public class Main {
                         }
                         count++;
                     }
-                    String res = "Delays = " +
+                    String res = "Delays = " + DelayAmount/count + " Cancelled = " + canceledAmount/count + " maxDelay = " + maxDelay + "\n";
+                    return res;
                 });
     }
 
