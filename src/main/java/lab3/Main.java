@@ -7,6 +7,8 @@ import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.broadcast.Broadcast;
 import scala.Tuple2;
 
+import java.util.Map;
+
 public class Main {
     private static JavaRDD<String> flights;
     private static JavaRDD<String> airports;
