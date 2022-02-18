@@ -65,6 +65,9 @@ public class Main {
                         }
                         if (flight.getDelay() > 0) {
                             DelayAmount++;
+                            if (flight.getDelay() > maxDelay) {
+                                maxDelay = flight.getDelay();
+                            }
                         }
                     }
                 });
