@@ -41,8 +41,8 @@ public class Main {
         SparkConf conf = new SparkConf().setAppName("lab3");
         JavaSparkContext context = new JavaSparkContext(conf);
 
-        flights = context.textFile(args[0]);
-        airports = context.textFile(args[1]);
+        flights = context.textFile("time.csv");
+        airports = context.textFile("airport.csv");
         String finalFlights = flights.first();
         String finalAirports = airports.first();
         flights = flights.filter(a -> !a.equals(finalFlights));
