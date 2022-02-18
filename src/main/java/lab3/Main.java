@@ -1,6 +1,7 @@
 package lab3;
 
 import org.apache.spark.SparkConf;
+import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
 
@@ -18,6 +19,11 @@ public class Main {
         String finalAirports = airports.first();
         flights = flights.filter(a -> !a.equals(finalFlights));
         airports = airports.filter(a -> !a.equals(finalAirports));
+
+        JavaPairRDD<String,String> airport = airports.mapToPair(
+                line -> {
+                    String[] cols = line.split()
+                });
     }
 
 }
