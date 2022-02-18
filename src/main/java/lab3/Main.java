@@ -62,7 +62,8 @@ public class Main {
                         Flight flight = flightIter.next();
                         if (flight.isCanceled()) {
                             canceledAmount++;
-                        } else if (flight.getDelay()) {
+                        }
+                        if (flight.getDelay() > 0) {
                             DelayAmount++;
                         }
                     }
