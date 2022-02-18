@@ -27,5 +27,7 @@ public class Flight implements Serializable {
         return Depature;
     }
 
-    public get
+    public int getDelay() {
+        return Delay;
+    }
 }
