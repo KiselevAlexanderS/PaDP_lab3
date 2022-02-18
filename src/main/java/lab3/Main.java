@@ -38,7 +38,7 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        SparkConf conf = new SparkConf().setAppName("lab3").setMaster("local[2]");
+        SparkConf conf = new SparkConf().setAppName("lab3");
         JavaSparkContext context = new JavaSparkContext(conf);
 
         flights = context.textFile(args[0]);
