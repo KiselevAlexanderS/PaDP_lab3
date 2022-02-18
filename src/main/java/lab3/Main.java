@@ -7,6 +7,7 @@ import org.apache.spark.api.java.JavaSparkContext;
 import org.apache.spark.broadcast.Broadcast;
 import scala.Tuple2;
 
+import java.util.Iterator;
 import java.util.Map;
 
 public class Main {
@@ -50,6 +51,10 @@ public class Main {
         map_to_pair();
 
         final Broadcast<Map<String,String>> airBrodcast = context.broadcast(airport.collectAsMap());
+        flight.groupByKey().mapValues(
+                flights -> {
+                    Iterator<Flight> iterator = flights.iterator();
+                });
     }
 
 }
