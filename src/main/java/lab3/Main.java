@@ -6,7 +6,8 @@ import org.apache.spark.api.java.JavaSparkContext;
 
 public class Main {
     private JavaRDD<String> flights;
-    private JavaRDD<String> airports
+    private JavaRDD<String> airports;
+    
     public static void main(String[] args) {
         SparkConf conf = new SparkConf().setAppName("lab3");
         JavaSparkContext context = new JavaSparkContext(conf);
