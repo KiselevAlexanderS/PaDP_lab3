@@ -24,6 +24,8 @@ public class Main {
                 line -> {
                     String[] cols = line.split(",");
                     String code = cols[0].replace("\"","");
+                    String description = cols[1].replace("\"","");
+                    return new Tuple2<>(code, description);
                 });
     }
 
