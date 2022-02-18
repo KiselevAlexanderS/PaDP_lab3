@@ -14,8 +14,8 @@ public class Main {
 
         flights = context.textFile(args[0]);
         airports = context.textFile(args[1]);
-        String finalFlights = flights;
-        String finalAirports = airports;
+        String finalFlights = flights.first();
+        String finalAirports = airports.first();
 
     }
 
