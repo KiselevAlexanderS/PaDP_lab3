@@ -65,10 +65,10 @@ public class Main {
                         if (flight.isCanceled()) {
                             canceledAmount++;
                         }
-                        if (flight.getDelay() > 0) {
+                        if (currDelay > 0) {
                             DelayAmount++;
-                            if (flight.getDelay() > maxDelay) {
-                                maxDelay = flight.getDelay();
+                            if (currDelay > maxDelay) {
+                                maxDelay = currDelay;
                             }
                         }
                     }
