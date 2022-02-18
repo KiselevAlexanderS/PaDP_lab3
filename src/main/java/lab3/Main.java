@@ -1,8 +1,12 @@
 package lab3;
 
 import org.apache.spark.SparkConf;
+import org.apache.spark.api.java.JavaSparkContext;
 
 public class Main {
-    SparkConf conf = new SparkConf().setAppName("lab3");
+    public static void main(String[] args) {
+        SparkConf conf = new SparkConf().setAppName("lab3");
+        JavaSparkContext context = new JavaSparkContext(conf);
+    }
 
 }
