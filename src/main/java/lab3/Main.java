@@ -54,6 +54,9 @@ public class Main {
         flight.groupByKey().mapValues(
                 flights -> {
                     Iterator<Flight> iterator = flights.iterator();
+                    int canceledAmount = 0;
+                    int canceledAmount = 0;
+                    int canceledAmount = 0;
                 });
     }
 
