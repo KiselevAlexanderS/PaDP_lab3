@@ -1,2 +1,4 @@
-package lab3;public class Flight {
+package lab3;
+
+public class Flight {
 }
