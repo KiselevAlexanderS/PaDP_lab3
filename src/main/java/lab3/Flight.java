@@ -8,7 +8,7 @@ public class Flight implements Serializable {
     private Float Delay;
     private boolean Canceled;
 
-    Flight(String Depature, String Arrival, boolean Canceled, int Delay) {
+    Flight(String Depature, String Arrival, boolean Canceled, Float Delay) {
         this.Depature = Depature;
         this.Arrival = Arrival;
         this.Canceled = Canceled;
