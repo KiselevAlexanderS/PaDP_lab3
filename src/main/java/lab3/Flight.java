@@ -1,6 +1,6 @@
 package lab3;
 
-import java.io.Serializable;
+import scala.Serializable;
 
 public class Flight implements Serializable {
     private String Depature;
