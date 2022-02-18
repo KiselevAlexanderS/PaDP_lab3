@@ -71,7 +71,9 @@ public class Main {
                                 maxDelay = currDelay;
                             }
                         }
+                        count++;
                     }
+
                 });
     }
 
