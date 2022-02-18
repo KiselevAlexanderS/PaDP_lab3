@@ -58,6 +58,14 @@ public class Main {
                     int DelayAmount = 0;
                     int count = 0;
                     float maxDelay = 0;
+                    for (Iterator<Flight> flightIter = iterator; iterator.hasNext();) {
+                        Flight flight = flightIter.next();
+                        if (flight.isCanceled()) {
+                            canceledAmount++;
+                        } else if (flight.getDelay()) {
+                            DelayAmount++;
+                        }
+                    }
                 });
     }
 
