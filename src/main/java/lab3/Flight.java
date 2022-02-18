@@ -33,6 +33,7 @@ public class Flight implements Serializable {
 
     @Override
     public String toString() {
-        String str = ""
+        String str = "Flight{" + "airportOfDeparture = " + Depature + "airportOfArrival = " + Arrival + "isCancelled = " + Canceled + "timeOfDelay = " + Delay + "}";;
+        return (str);
     }
 }
