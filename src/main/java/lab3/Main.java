@@ -41,8 +41,8 @@ public class Main {
         SparkConf conf = new SparkConf().setAppName("lab3");
         JavaSparkContext context = new JavaSparkContext(conf);
 
-        flights = context.textFile(args[0]);
-        airports = context.textFile(args[1]);
+        flights = context.textFile("time.csv");
+        airports = context.textFile("airport.csv");
         String finalFlights = flights.first();
         String finalAirports = airports.first();
         flights = flights.filter(a -> !a.equals(finalFlights));
@@ -80,7 +80,7 @@ public class Main {
                     String departure = airBrodcast.value().get(fl._1._1);
                     String result = "Departure " + departure + " destination " + destination + " flight info " + fl._2;
                     return result;
-        }).saveAsTextFile(args[2]);
+        }).saveAsTextFile("output");
     }
 
 }
